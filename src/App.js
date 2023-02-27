@@ -9,9 +9,17 @@ import './App.css';
 //import components
 import { Navbar, Footer, Sidebar } from './components';
 //import pages 
-import { Home, Orders, TaskManagement, Project, Calendar,  Line, Area, Bar, ColorPicker, 
- Editor } from './pages';
 
+import Bar from './pages';
+ import Home from './pages/';
+ import Taskmanagement from './pages/';
+ import Leads from './pages/';
+ import Project from './pages/';
+ import Calendar from './pages/';
+ import Line from './pages';
+ import Area from './pages';
+ import ColorPicker from './pages';
+ 
 function App() {
 
 const activeMenu= true;
@@ -42,32 +50,33 @@ const activeMenu= true;
             } >
                 <div className='fixed md:static bg-main-bg navbar w-full'>
             <Navbar/>
-                </div>
+               
             </div>
   
         <div>
         <Routes>
             {/* Dashboard*/}
-            <Route path="/" element="Home"/>
+            <Route path="/" element={<Home/>}/>
               {/* Leads*/}
-              <Route path="/leads" element="Leads" />
+              <Route path="leads" element={<Leads/>} />
                {/* Task Management*/}
-               <Route path="/task-management" element="TaskManagement"/>
+               <Route path="/taskmanagement" element={<Taskmanagement/>}/>
                
               {/* Project Management*/}
-              <Route path="/project" element="Project"/>
+              <Route path="/project" element={<Project/>}/>
               {/* Calendar*/}
-              <Route path="/calendar" element="Calendar"/>
+              <Route path="/calendar" element={<Calendar/>}/>
               {/* Bio/ editor*/}
-              <Route path="/editor" element="Editor"/>
+              <Route path="/editor" element={<Editor/>} />  s
 {/* color-picker*/}
-<Route path="/color-picker" element="ColorPicker"/>
+<Route path="/color-picker" element={<ColorPicker/>}/>
 
               {/* chart*/}
-              <Route path="/line" element="Line"/>
-              <Route path="/bar" element="Bar" />
-              <Route path="/area" element="Area"/>
+              <Route path="/Line" element={<Line/>}/>
+              <Route path="/Bar" element={<Bar/>} />
+              <Route path="/Area" element={<Area/>}/>
         </Routes>
+        </div>
         </div>
 
         </div>
