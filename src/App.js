@@ -22,9 +22,7 @@ import Bar from './pages';
  import Editor from './pages';
 
 function App() {
-    const {activeMenu } = useStateContext();
-
-
+    const {activeMenu, setMenuActive } = useStateContext();
     return (
         <div><BrowserRouter>
         <div className="flex relative dark:bbg-main-dark-bg"> 
@@ -78,6 +76,7 @@ function App() {
               <Route path="/Area" element={<Area/>}/>
         </Routes>
         </div>
+     
         </div>
 
         </div>
