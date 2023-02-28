@@ -19,10 +19,11 @@ import Bar from './pages';
  import Line from './pages';
  import Area from './pages';
  import ColorPicker from './pages';
+ import Editor from './pages';
  
 function App() {
 
-const activeMenu= true;
+const activeMenu = true;
 
     return (
         <div><BrowserRouter>
