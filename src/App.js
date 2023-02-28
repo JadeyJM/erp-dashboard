@@ -9,7 +9,7 @@ import './App.css';
 //import components
 import { Navbar, Footer, Sidebar } from './components';
 //import pages 
-
+import { useStateContext } from './contexts/ContextProvider';
 import Bar from './pages';
  import Home from './pages/';
  import Taskmanagement from './pages/';
@@ -20,10 +20,10 @@ import Bar from './pages';
  import Area from './pages';
  import ColorPicker from './pages';
  import Editor from './pages';
- 
-function App() {
 
-const activeMenu = true;
+function App() {
+    const {activeMenu } = useStateContext();
+
 
     return (
         <div><BrowserRouter>
@@ -32,9 +32,9 @@ const activeMenu = true;
         <div className="fixed right-4 bottom-4" style={{zindex:'1000'}}></div>
         <TooltipComponent content="Settings" position="Top">
 <button>
-   <FiSettings className="text-5xl p-3 hover:drop-shadow-xl text-white" style={{background:'blue',
+   {/* <FiSettings className="text-5xl p-3 hover:drop-shadow-xl text-white" style={{background:'blue',
     borderRadius:'50%'}}></FiSettings>
-    
+     */}
 </button>
         </TooltipComponent>
         </div><div>
@@ -68,7 +68,7 @@ const activeMenu = true;
               {/* Calendar*/}
               <Route path="/calendar" element={<Calendar/>}/>
               {/* Bio/ editor*/}
-              <Route path="/editor" element={<Editor/>} />  s
+              <Route path="/editor" element={<Editor/>} />  
 {/* color-picker*/}
 <Route path="/color-picker" element={<ColorPicker/>}/>
 

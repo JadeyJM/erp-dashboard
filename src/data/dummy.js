@@ -474,8 +474,8 @@ export const links = [
     title: 'Dashboard',
     links: [
       {
-        name: 'ecommerce',
-        icon: <FiShoppingBag />,
+        name: 'home'
+        
       },
     ],
   },
@@ -484,16 +484,15 @@ export const links = [
     title: 'Pages',
     links: [
       {
-        name: 'orders',
-        icon: <AiOutlineShoppingCart />,
+        name: 'projects'
+       
       },
       {
-        name: 'employees',
-        icon: <IoMdContacts />,
+        name: 'Leads'
+      
       },
       {
-        name: 'customers',
-        icon: <RiContactsLine />,
+        name: 'customers'
       },
     ],
   },
@@ -502,19 +501,19 @@ export const links = [
     links: [
       {
         name: 'calendar',
-        icon: <AiOutlineCalendar />,
+ 
       },
       {
-        name: 'kanban',
-        icon: <BsKanban />,
+        name: 'taskmanagement',
+   
       },
       {
         name: 'editor',
-        icon: <FiEdit />,
+     
       },
       {
         name: 'color-picker',
-        icon: <BiColorFill />,
+       
       },
     ],
   },
@@ -522,37 +521,20 @@ export const links = [
     title: 'Charts',
     links: [
       {
-        name: 'line',
-        icon: <AiOutlineStock />,
+        name: 'line'
+    
       },
       {
-        name: 'area',
-        icon: <AiOutlineAreaChart />,
+        name: 'area'
+   
       },
 
       {
-        name: 'bar',
-        icon: <AiOutlineBarChart />,
+        name: 'bar'
+       
       },
       {
-        name: 'pie',
-        icon: <FiPieChart />,
-      },
-      {
-        name: 'financial',
-        icon: <RiStockLine />,
-      },
-      {
-        name: 'color-mapping',
-        icon: <BsBarChart />,
-      },
-      {
-        name: 'pyramid',
-        icon: <GiLouvrePyramid />,
-      },
-      {
-        name: 'stacked',
-        icon: <AiOutlineBarChart />,
+        name: 'color-mapping'
       },
     ],
   },
