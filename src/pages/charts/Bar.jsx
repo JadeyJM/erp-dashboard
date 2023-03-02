@@ -2,7 +2,7 @@ import React from 'react'
 
 const Bar = () => {
   return (
-    <div>Bar</div>
+    <div>Bar fuck yes fucking finally. Debugginbg Lordess at this point</div>
   )
 }
 

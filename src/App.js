@@ -1,42 +1,31 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { Navbar, Footer, Sidebar } from './components';
 //import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor } from './pages';
 
-import './App.css';
-// import Area  from './pages';
-import Bar  from './pages';
-import Line  from './pages';
+import './App.css'; 
+import Area  from './pages/charts/Area';
+import Bar  from './pages/charts/Bar';
+import Line  from './pages/charts/Line';
+import Home from './pages/Home';
+import Calendar from './pages/Calendar';
 import { useStateContext } from './contexts/ContextProvider';
 
+
+
 const App = () => {
-  const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
+  const {  activeMenu } = useStateContext();
 
 
 
+  const newLocal = <Route exact path="./charts/Line" element={<Line />} />;
   return (
     
       <BrowserRouter>
-        <div className="flex relative">
-          <div className="fixed right-4 bottom-4" style={{ zIndex: '1000' }}>
-            <TooltipComponent
-              content="Settings"
-              position="Top"
-            >
-              <button
-                type="button"
-                onClick={() => setThemeSettings(true)}
-                style={{ background: currentColor, borderRadius: '50%' }}
-                className="text-3xl text-white p-3 hover:drop-shadow-xl hover:bg-light-gray"
-              >
-                <FiSettings />
-              </button>
-
-            </TooltipComponent>
-          </div>
+        <div className="flex relative">     
           {activeMenu ? (
             <div className="w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white ">
               <Sidebar />
@@ -56,11 +45,13 @@ const App = () => {
             <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full ">
               <Navbar />
             </div>
+           
             <div>
-             
+            <h1>test</h1>
+         <div>
               <Routes>
                 {/* dashboard  */}
-                {/* <Route path="/" element={(<Ecommerce />)} /> */}
+                <Route path="/" element={(<Home />)} />
                 {/* <Route path="/ecommerce" element={(<Ecommerce />)} /> */}
 
                 {/* pages  */}
@@ -71,14 +62,14 @@ const App = () => {
                 {/* apps  */}
                 {/* <Route path="/kanban" element={<Kanban />} /> */}
                 {/* <Route path="/editor" element={<Editor />} />
-                <Route path="/calendar" element={<Calendar />} />
+              
                 <Route path="/color-picker" element={<ColorPicker />} /> */}
-
+  <Route path="/calendar" element={<Calendar />} />
                 {/* charts  */}
-                <Route exact path="/pages/charts/line" element={<Line />} />
+                {newLocal}
                 {/* <Route path="/area" element={<Area />} /> */}
-                {/* <Route path="/area" ><Area /></Route> */}
-                <Route path='/bar' element={ <Bar />} />
+                <Route exact path="/area" element={ < Area />} />
+                <Route exact path='/bar' element={ <Bar />} />
                 {/* <Route path="/pie" element={<Pie />} />
                 <Route path="/financial" element={<Financial />} />
                 <Route path="/color-mapping" element={<ColorMapping />} />
@@ -86,6 +77,9 @@ const App = () => {
                 <Route path="/stacked" element={<Stacked />} /> */}
 
               </Routes>
+     
+              </div>
+
             </div>
             <Footer />
           </div>
