@@ -471,7 +471,7 @@ export const employeesGrid = [
 
 export const links = [
   {
-    title: 'Dashboard',
+ 
     links: [
       {
         name: 'home'
@@ -481,44 +481,44 @@ export const links = [
   },
 
   {
-    title: 'Pages',
+   
     links: [
       {
-        name: 'project'
+        name: 'Leads'
+       
        
       },
       {
-        name: 'Leads'
+        name: 'projects'
       
       },
       {
         name: 'customers'
       },
-    ],
-  },
-  {
-    title: 'Apps',
-    links: [
       {
-        name: 'calendar',
- 
-      },
-      {
-        name: 'taskmanagement',
-   
-      },
-      {
-        name: 'editor',
+        name: 'ContactManagement'
      
       },
       {
-        name: 'color-picker',
+        name: 'TaskManagement'
        
       },
     ],
   },
   {
-    title: 'Charts',
+  
+    links: [
+      {
+        name: 'Calendar'
+      },
+      {
+        name: 'Editor'
+   
+      },
+    ],
+  },
+  {
+    // title: 'Charts',
     links: [
       {
         name: 'line'
@@ -533,9 +533,9 @@ export const links = [
         name: 'bar'
        
       },
-      {
-        name: 'color-mapping'
-      },
+      // {
+      //   name: 'color-mapping'
+      // },
     ],
   },
 ];
@@ -558,8 +558,8 @@ export const cartData = [
   {
     image:
       product7,
-    name: 'Red color candy',
-    category: 'Food Item',
+    name: 'Qoutation Request',
+    category: 'See inbox to read email',
     price: '$190',
   },
 ];
@@ -568,29 +568,29 @@ export const chatData = [
   {
     image:
       avatar2,
-    message: 'Roman Joined the Team!',
-    desc: 'Congratulate him',
+    message: 'Send client email: Nike',
+    desc: 'Assigned tasks',
     time: '9:08 AM',
   },
   {
     image:
       avatar3,
-    message: 'New message received',
-    desc: 'Salma sent you new message',
+    message: 'New email received',
+    desc: 'Clarice sent you new message',
     time: '11:56 AM',
   },
   {
     image:
       avatar4,
-    message: 'New Payment received',
-    desc: 'Check your earnings',
+    message: 'New Project has been created',
+    desc: 'See projects',
     time: '4:39 AM',
   },
   {
     image:
       avatar,
-    message: 'Jolly completed tasks',
-    desc: 'Assign her new tasks',
+    message: 'Add creative bio',
+    desc: 'Assigned tasks',
     time: '1:12 AM',
   },
 ];
@@ -3077,7 +3077,7 @@ export const lineCustomSeries = [
   { dataSource: lineChartData[0],
     xName: 'x',
     yName: 'y',
-    name: 'Germany',
+    name: 'Utrecht',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
     type: 'Line' },
@@ -3085,7 +3085,7 @@ export const lineCustomSeries = [
   { dataSource: lineChartData[1],
     xName: 'x',
     yName: 'y',
-    name: 'England',
+    name: 'Den Haag',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
     type: 'Line' },
@@ -3093,7 +3093,7 @@ export const lineCustomSeries = [
   { dataSource: lineChartData[2],
     xName: 'x',
     yName: 'y',
-    name: 'India',
+    name: 'Amsterdam',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
     type: 'Line' },
@@ -3212,7 +3212,7 @@ export const kanbanData = [
     Priority: 'Low',
     Tags: 'Analyze,Customer',
     Estimate: 3.5,
-    Assignee: 'Nancy Davloio',
+    Assignee: 'Duonia Jari',
     RankId: 1,
     Color: '#02897B',
     ClassName: 'e-story, e-low, e-nancy-davloio',
@@ -3240,7 +3240,7 @@ export const kanbanData = [
     Priority: 'Critical',
     Tags: 'Meeting',
     Estimate: 5.5,
-    Assignee: 'Janet Leverling',
+    Assignee: 'Hasna El Maroudi',
     RankId: 2,
     Color: '#1F88E5',
     ClassName: 'e-others, e-critical, e-janet-leverling',
@@ -3254,7 +3254,7 @@ export const kanbanData = [
     Priority: 'Critical',
     Tags: 'IE',
     Estimate: 2.5,
-    Assignee: 'Janet Leverling',
+    Assignee: 'Clarice Gargard',
     RankId: 2,
     Color: '#E64A19',
     ClassName: 'e-bug, e-release, e-janet-leverling',
@@ -3268,7 +3268,7 @@ export const kanbanData = [
     Priority: 'Low',
     Tags: 'Customer',
     Estimate: '3.5',
-    Assignee: 'Steven walker',
+    Assignee: 'Betul',
     RankId: 1,
     Color: '#E64A19',
     ClassName: 'e-bug, e-low, e-steven-walker',
@@ -3296,7 +3296,7 @@ export const kanbanData = [
     Priority: 'Critical',
     Tags: 'Fix,Safari',
     Estimate: 1.5,
-    Assignee: 'Nancy Davloio',
+    Assignee: 'Clarice Gargard',
     RankId: 2,
     Color: '#E64A19',
     ClassName: 'e-bug, e-release, e-nancy-davloio',
@@ -3310,7 +3310,7 @@ export const kanbanData = [
     Priority: 'Low',
     Tags: 'Review,IE',
     Estimate: 5.5,
-    Assignee: 'Margaret hamilt',
+    Assignee: 'Solange',
     RankId: 3,
     Color: '#02897B',
     ClassName: 'e-story, e-low, e-margaret-hamilt',
@@ -3324,7 +3324,7 @@ export const kanbanData = [
     Priority: 'High',
     Tags: 'Validation,Fix',
     Estimate: 1,
-    Assignee: 'Steven walker',
+    Assignee: 'Aimee',
     RankId: 1,
     Color: '#02897B',
     ClassName: 'e-story, e-high, e-steven-walker',
@@ -3352,7 +3352,7 @@ export const kanbanData = [
     Type: 'Bug',
     Tags: 'Database,Sql2008',
     Estimate: 2.5,
-    Assignee: 'Janet Leverling',
+    Assignee: 'Clarice Gargard',
     RankId: 4,
     Color: '#E64A19',
     ClassName: 'e-bug, e-critical, e-janet-leverling',
@@ -3366,7 +3366,7 @@ export const kanbanData = [
     Priority: 'Normal',
     Tags: 'Databinding',
     Estimate: '3.5',
-    Assignee: 'Janet Leverling',
+    Assignee: 'Clarice Gargard',
     RankId: 4,
     Color: '#02897B',
     ClassName: 'e-story, e-normal, e-janet-leverling',
@@ -3380,7 +3380,7 @@ export const kanbanData = [
     Priority: 'Critical',
     Tags: 'Grid,Sql',
     Estimate: 2,
-    Assignee: 'Andrew Fuller',
+    Assignee: 'Clarice Gargard',
     RankId: 4,
     Color: '#02897B',
     ClassName: 'e-story, e-release, e-andrew-fuller',
@@ -3394,7 +3394,7 @@ export const kanbanData = [
     Priority: 'Low',
     Tags: 'Validation',
     Estimate: 1.5,
-    Assignee: 'Margaret hamilt',
+    Assignee: 'Clarice Gargard',
     RankId: 1,
     Color: '#02897B',
     ClassName: 'e-story, e-low, e-margaret-hamilt',
@@ -3408,7 +3408,7 @@ export const kanbanData = [
     Priority: 'High',
     Tags: 'Analyze',
     Estimate: 2.5,
-    Assignee: 'Margaret hamilt',
+    Assignee: 'Clarice Gargard',
     RankId: 5,
     Color: '#02897B',
     ClassName: 'e-story, e-high, e-margaret-hamilt',
@@ -3422,7 +3422,7 @@ export const kanbanData = [
     Priority: 'Critical',
     Tags: 'Databinding',
     Estimate: 1.5,
-    Assignee: 'Steven walker',
+    Assignee: 'Clarice Gargard',
     RankId: 6,
     Color: '#1F88E5',
     ClassName: 'e-others, e-release, e-steven-walker',
@@ -3436,7 +3436,7 @@ export const kanbanData = [
     Priority: 'Critical',
     Tags: 'Procedures',
     Estimate: 5.5,
-    Assignee: 'Janet Leverling',
+    Assignee: 'Clarice Gargard',
     RankId: 7,
     Color: '#02897B',
     ClassName: 'e-story, e-release, e-janet-leverling',
@@ -3450,7 +3450,7 @@ export const kanbanData = [
     Priority: 'Critical',
     Tags: 'Editing',
     Estimate: 1,
-    Assignee: 'Nancy Davloio',
+    Assignee: 'Clarice Gargard',
     RankId: 1,
     Color: '#02897B',
     ClassName: 'e-story, e-critical, e-nancy-davloio',
@@ -3464,7 +3464,7 @@ export const kanbanData = [
     Priority: 'Normal',
     Tags: 'Editing,Test',
     Estimate: 0.5,
-    Assignee: 'Nancy Davloio',
+    Assignee: 'Clarice Gargard',
     RankId: 5,
     Color: '#02897B',
     ClassName: 'e-story, e-normal, e-nancy-davloio',
@@ -3478,7 +3478,7 @@ export const kanbanData = [
     Priority: 'Low',
     Tags: 'Editing',
     Estimate: 3.5,
-    Assignee: 'Andrew Fuller',
+    Assignee: 'Clarice Gargard',
     RankId: 5,
     Color: '#673AB8',
     ClassName: 'e-improvement, e-low, e-andrew-fuller',
@@ -3492,7 +3492,7 @@ export const kanbanData = [
     Priority: 'High',
     Tags: 'Performance',
     Estimate: 6,
-    Assignee: 'Nancy Davloio',
+    Assignee: 'Clarice Gargard',
     RankId: 5,
     Color: '#e91e64',
     ClassName: 'e-epic, e-high, e-nancy-davloio',
@@ -3506,7 +3506,7 @@ export const kanbanData = [
     Priority: 'High',
     Tags: 'Meeting,Editing',
     Estimate: 5.5,
-    Assignee: 'Steven walker',
+    Assignee: 'Clarice Gargard',
     RankId: 6,
     Color: '#1F88E5',
     ClassName: 'e-others, e-high, e-steven-walker',
@@ -3520,7 +3520,7 @@ export const kanbanData = [
     Priority: 'Low',
     Tags: 'Editing,Fix',
     Estimate: '3.5',
-    Assignee: 'Janet Leverling',
+    Assignee: 'Clarice Gargard',
     RankId: 6,
     Color: '#E64A19',
     ClassName: 'e-bug, e-low, e-janet-leverling',
@@ -3534,7 +3534,7 @@ export const kanbanData = [
     Priority: 'Critical',
     Tags: 'Customer',
     Estimate: '3.5',
-    Assignee: 'Steven walker',
+    Assignee: 'Clarice Gargard',
     RankId: 1,
     Color: '#E64A19',
     ClassName: 'e-bug, e-critical, e-steven-walker',
@@ -3548,7 +3548,7 @@ export const kanbanData = [
     Priority: 'Critical',
     Tags: 'Fix,Safari',
     Estimate: 1.5,
-    Assignee: 'Nancy Davloio',
+    Assignee:'Clarice Gargard',
     RankId: 2,
     Color: '#E64A19',
     ClassName: 'e-bug, e-release, e-nancy-davloio',

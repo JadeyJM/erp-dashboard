@@ -24,13 +24,13 @@ const UserProfile = () => {
                 <img className="rounded-full h-24 w-24" src={avatar} alt="user-profile"/>
                 <div>
                     <p className="font-semibold text-xl dark:text-gray-200">
-                    Clarice C Gargard
+                  Duonia Jari
                     </p>
                     <p className="text-gray-500 text-sm dark:text-gray-400">
                         Super Administrator
                     </p>
                     <p className="text-gray-500 text-xs font-semibold dark:text-gray-400">
-                       claricegargard-main@lilithagency.nl
+                       duoniajari@lilithagency.nl
                     </p>
                 </div>
             </div>

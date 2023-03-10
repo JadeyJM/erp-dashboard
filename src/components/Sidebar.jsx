@@ -7,6 +7,8 @@ import { links } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
 import { Calendar } from '@syncfusion/ej2-react-calendars';
 import { Kanban } from '@syncfusion/ej2-react-kanban';
+import logo from '../data/logo.jpg';
+
 
 const Sidebar = () => {
  
@@ -26,9 +28,8 @@ const Sidebar = () => {
       {activeMenu && (
         <>
           <div className="flex justify-between items-center">
-            <Link to="/" onClick={handleCloseSideBar} className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900">
-              <span className="text-white items-center">
-                Lilith Agency</span>
+            <Link to="/" onClick={handleCloseSideBar} className="items-center gap-3 w-5/6 pt-8 ml-2 mt-6 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900">
+            <img src={logo} alt="Logo" />;
             </Link>
             <TooltipComponent content="Menu" position="BottomCenter">
               <button
@@ -44,7 +45,7 @@ const Sidebar = () => {
           <div className="mt-10 ">
             {links.map((item) => (
               <div key={item.title}>
-                <p className="text-white dark:text-white m-3 mt-4 uppercase">
+                <p className="text-white dark:text-white ml-8 mt-4 uppercase">
                   {item.title}
                 </p>
                 {item.links.map((link) => (
@@ -59,7 +60,7 @@ const Sidebar = () => {
                     className={({ isActive }) => (isActive ? activeLink : normalLink)}
                   >
                     {link.icon}
-                    <span className="capitalize text-white hover:text-orange-500 hover:bg-none">{link.name}</span>
+                    <span className="uppercase bold text-white hover:text-orange-500 hover:bg-none">{link.name}</span>
                   </NavLink>
                 ))}
               </div>

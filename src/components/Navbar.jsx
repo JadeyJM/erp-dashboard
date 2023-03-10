@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import {AiOutlineMenu} from 'react-icons/ai';
 import {FiShoppingCart} from 'react-icons/fi';
 import {BsChatLeft} from 'react-icons/bs';
-import {RiNotification3Line} from 'react-icons/ri';
+import {IoIosNotificationsOutline} from 'react-icons/io';
 import {MdKeyboardArrowDown} from 'react-icons/md';
 import {TooltipComponent} from '@syncfusion/ej2-react-popups';
 
@@ -60,7 +60,7 @@ const Navbar = () => {
     const handleActiveMenu = () => setActiveMenu(!activeMenu);
 
     return (
-        <div className="flex bg-white justify-between p-2 md:ml-6 md:mr-6 relative">
+        <div className="flex bg-white justify-between p-2 relative">
 
             <NavButton
                 title="Menu"
@@ -74,16 +74,17 @@ const Navbar = () => {
                     dotColor="rgb(254, 201, 15)"
                     customFunc={() => handleClick('notification')}
                     color={currentColor}
-                    icon={< RiNotification3Line />}/>
+                    icon={< IoIosNotificationsOutline />}/>
+                      <div className="border-1  border-gray-400 h-6 mr-2 ml-2 mt-2"></div>
                 <TooltipComponent content="Profile" position="BottomCenter">
                     <div
-                        className="flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg"
+                        className="flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg mr-3"
                         onClick={() => handleClick('userProfile')}>
                         <img className="rounded-full w-8 h-8" src={avatar} alt="user-profile"/>
                         <p>
-                            <span className="text-gray-400 text-14">Hi,</span>{' '}
+                          
                             <span className="text-gray-400 font-bold ml-1 text-14">
-                               Clarice
+                             Dounia Jari
                             </span>
                         </p>
                         {/* <MdKeyboardArrowDown className="text-gray-400 text-14"/> */}
@@ -91,6 +92,7 @@ const Navbar = () => {
                 </TooltipComponent>
 
                 {isClicked.notification && (<Notification/>)}
+              
                 {isClicked.userProfile && (<UserProfile/>)}
             </div>
         </div>
