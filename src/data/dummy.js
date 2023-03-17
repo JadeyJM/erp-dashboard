@@ -493,6 +493,9 @@ export const links = [
       
       },
       {
+        name: 'Calendar'
+      },
+      {
         name: 'customers'
       },
       {
@@ -503,14 +506,16 @@ export const links = [
         name: 'TaskManagement'
        
       },
+      {
+        name: 'Users'
+       
+      },
     ],
   },
   {
   
     links: [
-      {
-        name: 'Calendar'
-      },
+  
       {
         name: 'Editor'
    

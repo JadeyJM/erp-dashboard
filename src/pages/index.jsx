@@ -3,8 +3,13 @@
 // export { default as Ecommerce } from './Ecommerce';
 export { default as Taskmanagement } from './Taskmanagement';
 export { default as NewContact } from './NewContact';
+export { default as NewProject } from './NewProject';
+export { default as NewUsers } from './NewUsers';
+export { default as NewLeads } from './NewLeads';
+export { default as NewCustomers } from './NewCustomers';
 export { default as Projects } from './Projects';
 export { default as Leads } from './Leads';
+export { default as Home } from './Home';
 // export { default as Employees } from './Employees';
 export { default as Editor } from './Editor';
 //export { default as NewContact } from './NewContact';

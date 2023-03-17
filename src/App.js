@@ -23,7 +23,11 @@ import {ContactManagement} from './pages/';
 import {Projects} from './pages/';
 import {leads} from './pages/';
 import NewContact from './pages/NewContact';
-
+import NewProject from './pages/NewProject';
+import NewUsers from './pages/NewUsers';
+import NewLeads from './pages/NewLeads';
+import NewCustomers from './pages/NewCustomers';
+import Users from './pages/Users';
 
 const App = () => {
     const {activeMenu} = useStateContext();
@@ -54,13 +58,18 @@ const App = () => {
                         <div>
                             <Routes>
                                 {/* dashboard  */}
-                                <Route path="/" element={(<Home/>)}/> {/* pages  */}
+                                <Route path="/home" element={(<Home/>)}/> {/* pages  */}
                                 <Route path="/leads" element={(<Leads />)} />
                                 <Route path="/customers" element={< Customers />}/> {/* apps  */}
                                 <Route path="/taskmanagement" element={< Taskmanagement />}/>
                                 <Route path="/projects" element={< Projects />}/>
                                 <Route path="/contactmanagement" element={< ContactManagement />}/>
                                 <Route path="/newcontact" element={( < NewContact />)} />
+                                <Route path="/newproject" element={( < NewProject />)} />
+                                <Route path="/newleads" element={( < NewLeads />)} />
+                                <Route path="/newcustomers" element={( < NewCustomers />)} />
+                                <Route path="/users" element={( < Users />)} />
+                                <Route path="/newusers" element={( < NewUsers />)} />
                                 <Route path="/editor" element={< Editor />}/> {/* <Route path="/color-picker" element={<ColorPicker />} />  */}
                                 <Route path="/calendar" element={< Calendar />}/> {/* charts  */}
                                 {newLocal}
