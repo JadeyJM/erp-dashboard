@@ -2,8 +2,28 @@ import React from 'react'
 import { Header } from '../components'
 import { ImCheckboxUnchecked } from "react-icons/im"; 
 import { Link } from 'react-router-dom';
+import { useEffect, useState } from "react";
 
 const Users = () => {
+
+
+  const [data, setData] = useState();
+
+  const getData = async () => {
+    try {
+      const res = await fetch(
+        "https://sheet.best/api/sheets/f3e2bb04-314f-4ad6-b388-ad2df289d87d/tabs/users"
+      );
+      const data = await res.json();
+      setData(Object.keys(data).map((key) => data[key]));
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  useEffect(() => {
+    getData();
+  }, []);
+  
   return (
     <>  
     <div className=" flex items-end ml-12 mr-12 mb-12 mt-20 relative">
@@ -31,31 +51,19 @@ const Users = () => {
                        
                       </tr>
                     </thead>
+                    {data?.map((item, i) => (
                     <tbody>
                       <tr className="border-b dark:border-neutral-500">
                         <td className="whitespace-nowrap px-6 py-4 font-medium">< ImCheckboxUnchecked/></td>
-                        <td className="whitespace-nowrap px-6 py-4">Clarice Gargard</td>
-                        <td className="whitespace-nowrap px-6 py-4">claricegargard@liluthagency.nl</td>
-                        <td className="whitespace-nowrap px-6 py-4">ADMIN</td>
+                        <td className="whitespace-nowrap px-6 py-4">{item.contact}</td>
+                        <td className="whitespace-nowrap px-6 py-4">{item.email}</td>
+                        <td className="whitespace-nowrap px-6 py-4">{item.role}</td>
                        
                       </tr>
-                      <tr className="border-b dark:border-neutral-500">
-                        <td className="whitespace-nowrap px-6 py-4 font-medium ">< ImCheckboxUnchecked/></td>
-       
-                        <td className="whitespace-nowrap px-6 py-4">Duonia Jari</td>
-                        <td className="whitespace-nowrap px-6 py-4">dounia@lilitagency.nl</td>
-                        <td className="whitespace-nowrap px-6 py-4">ADMIN</td>
-                   
-                      </tr>
-                      <tr className="border-b ">
-                        <td className="whitespace-nowrap px-6 py-4 font-medium ">< ImCheckboxUnchecked/></td>
-      
-                        <td className="whitespace-nowrap px-6 py-4">Afiah Vijlbrief</td>
-                        <td className="whitespace-nowrap px-6 py-4">afiah@lilthagency.nl</td>
-                        <td className="whitespace-nowrap px-6 py-4">ADMIN</td>
-                      
-                      </tr>
+                  
+                    
                     </tbody>
+                        ))}
                   </table>
                 </div>
               </div>

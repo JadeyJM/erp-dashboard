@@ -2,15 +2,16 @@ import React from 'react'
 import { Header } from '../components'
 import { ImCheckboxUnchecked } from "react-icons/im"; 
 import { Link } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 const ContactManagement = () => {
+
   const [data, setData] = useState();
 
   const getData = async () => {
     try {
       const res = await fetch(
-      "https://sheet.best/api/sheets/38a7176f-d400-4df9-9faf-d979d30e4883/tabs/contactmanagement",
+        "https://sheet.best/api/sheets/f3e2bb04-314f-4ad6-b388-ad2df289d87d/tabs/contactmanagement"
       );
       const data = await res.json();
       setData(Object.keys(data).map((key) => data[key]));
@@ -18,7 +19,6 @@ const ContactManagement = () => {
       console.log(error);
     }
   };
-
   useEffect(() => {
     getData();
   }, []);
@@ -50,19 +50,19 @@ const ContactManagement = () => {
                      
                     </tr>
                   </thead>
-                  {data?.map((item, i) => (
+                   {data?.map((item, i) => (
                     <tbody>
                       <tr className="border-b dark:border-neutral-500">
                         <td className="whitespace-nowrap px-6 py-4 font-medium">< ImCheckboxUnchecked/></td>
-                        <td className="whitespace-nowrap px-6 py-4">{item.name}</td>
+                        <td className="whitespace-nowrap px-6 py-4">{item.contact_id}</td>
                         <td className="whitespace-nowrap px-6 py-4">{item.email}</td>
                         <td className="whitespace-nowrap px-6 py-4">{item.mobile}</td>
-                        <td className="whitespace-nowrap px-6 py-4">{item.type_function}</td>
+                        <td className="whitespace-nowrap px-6 py-4">{item.category}</td>
                         <td className="whitespace-nowrap px-6 py-4">{item.min_fee}</td>
                       </tr>
                 
                     </tbody>
-                    ))}
+                     ))} 
                 </table>
               </div>
             </div>

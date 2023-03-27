@@ -30,6 +30,12 @@ import NewCustomers from './pages/NewCustomers';
 import Users from './pages/Users';
 
 const App = () => {
+
+    //write 
+    //edit 
+    // delete
+
+    
     const {activeMenu} = useStateContext();
 
     const newLocal = <Route exact path="./charts/Line" element={< Line />}/>;

@@ -1,8 +1,11 @@
 import React from 'react'
 import { Header } from '../components'
 import { Link } from 'react-router-dom'
+import { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 const NewLeads = () => {
+
   return (<>
     <div className=" flex items-end ml-12 mr-12 mb-12 mt-20 relative">
   
