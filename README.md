@@ -49,6 +49,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 - Notifications 
 - Current User component
 - Sidebar navigation.
+- Footer Component
 - Horizontal navigation bar 
 - Modules that can be used for charts 
 
