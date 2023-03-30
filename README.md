@@ -7,7 +7,7 @@ Techniques used:
 - [Syncfusion](https://www.syncfusion.com/).
 - [Tailwind CSS](https://tailwindcss.com/).
 - [Sheet Best](https://sheet.best/).
-[- Firebase + FireStore](https://firebase.google.com/).
+- [Firebase + FireStore](https://firebase.google.com/).
 
 ## Available Scripts
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
