@@ -1,13 +1,13 @@
 # LILITH AGENCY ERP REACT WEB APPLICATION
 The ERP(Enterprise Resource Planning) application was built to improve the workflow and internal operations of Lilith Agency by streamlining and structurizing internal operations such as leads, project, customers, contact, calendar, task and user management.
 Techniques used: 
-[React JS](https://legacy.reactjs.org/)
-[React-Icons]([https://pages.github.com/](https://react-icons.github.io/react-icons/)).
-[React Router Dom](https://legacy.reactjs.org/docs/react-dom.html).
-[Syncfusion](https://www.syncfusion.com/).
-[Tailwind CSS]([https://pages.github.com/](https://tailwindcss.com/)).
-[Sheet Best](https://sheet.best/).
-[Firebase + FireStore](https://firebase.google.com/).
+- [React JS](https://legacy.reactjs.org/)
+- [React-Icons](https://react-icons.github.io/react-icons/).
+- [React Router Dom](https://legacy.reactjs.org/docs/react-dom.html).
+- [Syncfusion](https://www.syncfusion.com/).
+- [Tailwind CSS](https://tailwindcss.com/).
+- [Sheet Best](https://sheet.best/).
+[- Firebase + FireStore](https://firebase.google.com/).
 
 ## Available Scripts
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
