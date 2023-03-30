@@ -52,13 +52,37 @@ const ContactManagement = () => {
                   </thead>
                    {data?.map((item, i) => (
                     <tbody>
-                      <tr className="border-b dark:border-neutral-500">
+                      {/* <tr className="border-b dark:border-neutral-500">
                         <td className="whitespace-nowrap px-6 py-4 font-medium">< ImCheckboxUnchecked/></td>
                         <td className="whitespace-nowrap px-6 py-4">{item.contact_id}</td>
                         <td className="whitespace-nowrap px-6 py-4">{item.email}</td>
                         <td className="whitespace-nowrap px-6 py-4">{item.mobile}</td>
                         <td className="whitespace-nowrap px-6 py-4">{item.category}</td>
                         <td className="whitespace-nowrap px-6 py-4">{item.min_fee}</td>
+                      </tr> */}
+                         <tr className="border-b dark:border-neutral-500">
+                        <td className="whitespace-nowrap px-6 py-4 font-medium">< ImCheckboxUnchecked/></td>
+                        <td className="whitespace-nowrap px-6 py-4">Clarice Gargard</td>
+                        <td className="whitespace-nowrap px-6 py-4">clarice@gmail.com</td>
+                        <td className="whitespace-nowrap px-6 py-4">+31 06465544345</td>
+                        <td className="whitespace-nowrap px-6 py-4">Creative</td>
+                        <td className="whitespace-nowrap px-6 py-4">1200 euro</td>
+                      </tr>
+                      <tr className="border-b dark:border-neutral-500">
+                        <td className="whitespace-nowrap px-6 py-4 font-medium">< ImCheckboxUnchecked/></td>
+                        <td className="whitespace-nowrap px-6 py-4">Duonia Jari</td>
+                        <td className="whitespace-nowrap px-6 py-4">duonia@gmail.com</td>
+                        <td className="whitespace-nowrap px-6 py-4">+31 06465544345</td>
+                        <td className="whitespace-nowrap px-6 py-4">Creative</td>
+                        <td className="whitespace-nowrap px-6 py-4">950 euro</td>
+                      </tr>
+                      <tr className="border-b dark:border-neutral-500">
+                        <td className="whitespace-nowrap px-6 py-4 font-medium">< ImCheckboxUnchecked/></td>
+                        <td className="whitespace-nowrap px-6 py-4">Douglas Dekker</td>
+                        <td className="whitespace-nowrap px-6 py-4">nike@gmail.com</td>
+                        <td className="whitespace-nowrap px-6 py-4">+31 06465544345</td>
+                        <td className="whitespace-nowrap px-6 py-4">Organization</td>
+                        <td className="whitespace-nowrap px-6 py-4">-</td>
                       </tr>
                 
                     </tbody>

@@ -53,13 +53,35 @@ const Users = () => {
                     </thead>
                     {data?.map((item, i) => (
                     <tbody>
-                      <tr className="border-b dark:border-neutral-500">
+                      {/* <tr className="border-b dark:border-neutral-500">
                         <td className="whitespace-nowrap px-6 py-4 font-medium">< ImCheckboxUnchecked/></td>
                         <td className="whitespace-nowrap px-6 py-4">{item.contact}</td>
                         <td className="whitespace-nowrap px-6 py-4">{item.email}</td>
                         <td className="whitespace-nowrap px-6 py-4">{item.role}</td>
                        
+                      </tr> */}
+                      <tr className="border-b dark:border-neutral-500">
+                        <td className="whitespace-nowrap px-6 py-4 font-medium">< ImCheckboxUnchecked/></td>
+                        <td className="whitespace-nowrap px-6 py-4">Duonia Jari</td>
+                        <td className="whitespace-nowrap px-6 py-4">duonia@gmail.com</td>
+                        <td className="whitespace-nowrap px-6 py-4">Admin</td>
+                       
                       </tr>
+                      <tr className="border-b dark:border-neutral-500">
+                        <td className="whitespace-nowrap px-6 py-4 font-medium">< ImCheckboxUnchecked/></td>
+                        <td className="whitespace-nowrap px-6 py-4">Clarice Gargard</td>
+                        <td className="whitespace-nowrap px-6 py-4">duonia@gmail.com</td>
+                        <td className="whitespace-nowrap px-6 py-4">Admin</td>
+                       
+                      </tr>
+                      <tr className="border-b dark:border-neutral-500">
+                        <td className="whitespace-nowrap px-6 py-4 font-medium">< ImCheckboxUnchecked/></td>
+                        <td className="whitespace-nowrap px-6 py-4">Zaire Krieger</td>
+                        <td className="whitespace-nowrap px-6 py-4">zaire@gmail.com</td>
+                        <td className="whitespace-nowrap px-6 py-4">Admin</td>
+                       
+                      </tr>
+                      
                   
                     
                     </tbody>

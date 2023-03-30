@@ -59,6 +59,7 @@ const Leads = () => {
 
                     </tr>
                   </thead>
+                {  /*  return x-item for every item of data: organization id , creative id etc*/}
                   {data?.map((item, i) => (
                     <tbody>
                       {/* <tr className="border-b dark:border-neutral-500">

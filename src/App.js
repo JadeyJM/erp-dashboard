@@ -76,19 +76,19 @@ const App = () => {
                                 <Route path="/newcustomers" element={( < NewCustomers />)} />
                                 <Route path="/users" element={( < Users />)} />
                                 <Route path="/newusers" element={( < NewUsers />)} />
-                                <Route path="/editor" element={< Editor />}/> {/* <Route path="/color-picker" element={<ColorPicker />} />  */}
+                                {/* <Route path="/editor" element={< Editor />}/> {/* <Route path="/color-picker" element={<ColorPicker />} />  */}
                                 <Route path="/calendar" element={< Calendar />}/> {/* charts  */}
-                                {newLocal}
+                                {/* {newLocal} */}
                                 {/* <Route path="/area" element={<Area />} /> */}
                          
-                                <Route exact path="/area" element={< Area />}/>
+                                {/* <Route exact path="/area" element={< Area />}/>
                                 <Route exact path='/bar' element={< Bar />}/>
-                                <Route exact path='/Line' element={< Line />}/> {/* <Route path="/pie" element={<Pie />} />
+                                <Route exact path='/Line' element={< Line />}/> {/* <Route path="/pie" element={<Pie />} /> */}
                                 
-                <Route path="/financial" element={<Financial />} />
+                {/* <Route path="/financial" element={<Financial />} />
                 <Route path="/color-mapping" element={<ColorMapping />} />
                 <Route path="/pyramid" element={<Pyramid />} />
-                <Route path="/stacked" element={<Stacked />} /> */}
+                <Route path="/stacked" element={<Stacked />} />  */}
 
                             </Routes>
 

@@ -472,17 +472,12 @@ export const employeesGrid = [
 export const links = [
   {
  
+ 
     links: [
       {
         name: 'home'
         
       },
-    ],
-  },
-
-  {
-   
-    links: [
       {
         name: 'Leads'
        
@@ -512,37 +507,37 @@ export const links = [
       },
     ],
   },
-  {
+  // {
   
-    links: [
+  //   links: [
   
-      {
-        name: 'Editor'
+  //     {
+  //       name: 'Editor'
    
-      },
-    ],
-  },
-  {
+  //     },
+  //   ],
+  // },
+  // {
     // title: 'Charts',
-    links: [
-      {
-        name: 'line'
+    // links: [
+    //   {
+    //     name: 'line'
     
-      },
-      {
-        name: 'area'
+    //   },
+    //   {
+    //     name: 'area'
    
-      },
+    //   },
 
-      {
-        name: 'bar'
+    //   {
+    //     name: 'bar'
        
-      },
+    //   },
       // {
       //   name: 'color-mapping'
       // },
-    ],
-  },
+  //   ],
+  // },
 ];
 
 export const cartData = [
